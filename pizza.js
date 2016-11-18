@@ -27,16 +27,28 @@ class pizza{
 
   toppingCost(top){
     if(this.top=meatTopping){
-      
+      return meatTopping[meatTopping.length*0.99]
     }
-
+    else if(this.top=veggiaTopping){
+      return veggieTopping[gieTopping.length*0.50]
+    }
+    return toppingCost=this.meatTopping+this.veggieTopping;
   }
 
   price(){
-
+    this.price=this.sizeCost+his.ttoppingCost;
   }
 
   //type class functions below
-
-
+  static promotionalDeal(pizza,percent){
+    this.percent=p;
+    new price= this.price*(1-p);
+    return promotionalDeal
+  }
+  addTopping(toptype,newtype){
+    if(toptype==meat){
+      this.meatTopping.push
+        }
+        else if(toptyep=veggie)
+  }
 }
