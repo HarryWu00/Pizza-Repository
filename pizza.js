@@ -42,13 +42,27 @@ class pizza{
   //type class functions below
   static promotionalDeal(pizza,percent){
     this.percent=p;
-    new price= this.price*(1-p);
+    price =  new price*(1-p);
     return promotionalDeal
   }
-  addTopping(toptype,newtype){
+  addTopping(toptype,newtop){
     if(toptype==meat){
-      this.meatTopping.push
+      this.meatTopping.push(newtop);
+      return meatTopping;
         }
-        else if(toptyep=veggie)
-  }
+        else if(toptype=veggie){
+          veggie.push(newtop);
+          return veggieTopping;
+        }
+      }
+      removeTopping(toptype,newtype){
+        if(toptype==meat){
+          this.meatTopping.pop(newtop);
+          return meatTopping;
+      }
+      else if(toptyep=veggie){
+        this.veggietopping.pop(newtop);
+        return veggieTopping;
+      }
+    }
 }
