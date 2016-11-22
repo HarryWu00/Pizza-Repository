@@ -10,19 +10,18 @@ class pizza{
   //type instance functions below
 
   sizeCost(){
-  if(this.size=small){
-    sizeCost=7.99;
+  if(this.size=="S"||this.size=="s"){
+    return 7.99;
   }
-  else if(this.size=medium){
-    sizeCost=9.99;
+  else if(this.size=='M'){
+    return 9.99;
   }
-  else if(this.size=large){
-    sizeCost=12.99
+  else if(this.size=="L"){
+    return 12.99
   }
-  else{
-    sizeCost=15.99;
+  else if(this.size=="XL"){
+    return 15.99;
   }
-  return sizeCost
 }
 
   toppingCost(top){
@@ -36,31 +35,30 @@ class pizza{
   }
 
   price(){
-    this.price=this.sizeCost+his.ttoppingCost;
+    return this.sizeCost()+this.toppingCost("meatTopping"+"veggieTopping");
   }
 
   //type class functions below
   static promotionalDeal(pizza,percent){
-    this.percent=p;
-    price =  new price*(1-p);
-    return promotionalDeal
+    let p =  (1-percent);
+    return pizza.price()*p
   }
   addTopping(toptype,newtop){
-    if(toptype==meat){
+    if(toptype=='meat'){
       this.meatTopping.push(newtop);
       return meatTopping;
         }
-        else if(toptype=veggie){
+        else if(toptype=-'veggie'){
           veggie.push(newtop);
           return veggieTopping;
         }
       }
       removeTopping(toptype,newtype){
-        if(toptype==meat){
+        if(toptype=='meat'){
           this.meatTopping.pop(newtop);
           return meatTopping;
       }
-      else if(toptyep=veggie){
+      else if(toptype=='veggie'){
         this.veggietopping.pop(newtop);
         return veggieTopping;
       }
